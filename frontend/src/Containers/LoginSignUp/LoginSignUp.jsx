@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "./LoginSignUp.scss";
 import { Login } from "../../Components/Login/Login.jsx";
+import { SignUp } from "../../Components/SignUp/SignUp";
 
 export const LoginSignUp = (props) => {
 
@@ -14,7 +15,7 @@ export const LoginSignUp = (props) => {
             </div>
             <div className="rightPanel">
                 { login && <Login signUp={handleClick}/> }
-                { !login && <h2>Signup</h2>}
+                { !login && <SignUp login={handleClick}/>}
             </div>
         </div>
 
