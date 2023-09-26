@@ -5,7 +5,8 @@ import { SignUp } from "../../Components/SignUp/SignUp";
 
 export const LoginSignUp = (props) => {
 
-    const {login, handleClick} = props;
+    const [ isLoggedIn, setIsLoggedIn] = useState(false);
+    const {login, handleClick, handleLogin} = props;
 
     return (
 
@@ -14,7 +15,9 @@ export const LoginSignUp = (props) => {
                 <h1>Welcome component here</h1>
             </div>
             <div className="rightPanel">
-                { login && <Login signUp={handleClick}/> }
+                { login && <Login   signUp={handleClick} 
+                                    handleLogin={handleLogin} 
+                            /> }
                 { !login && <SignUp login={handleClick}/>}
             </div>
         </div>
