@@ -11,7 +11,7 @@ export const Login = (props) => {
     return (
 
         <>
-            <h3>Welcome back!</h3>
+            <h1>Welcome back!</h1>
             <Input label="Email" type="text" />
             <Input type="Password" />
             <Button text="Login" onClick={signUp} />

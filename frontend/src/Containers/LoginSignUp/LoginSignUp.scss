@@ -5,7 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border:1px solid red;
+    border-radius: 12px;
+
 
     .leftPanel {
 
@@ -14,6 +15,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: yellow;
+        border-bottom-left-radius: 25px;
+        border-top-left-radius: 25px;
+        background-color: #1D3B53;
+        color:	#F78C6C;
 
     }
 
@@ -25,7 +31,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        background-color: #D6DEEB;
+        color:		#637777;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
 
 }
