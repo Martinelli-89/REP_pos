@@ -1,21 +1,31 @@
 .menuButton {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    grid-template-rows: 1fr repeat();
+    grid-template-areas: 
+        "pic text";
     border-radius: 15px;
     background-color: transparent;
     color: #D6DEEB;
     width: 90%;
-    height: 32px;
+    padding:0px;
     cursor: pointer; 
 
     .menuButtonImg {
 
-        height: 80%;
-        width: auto;
+        height: 60%;
+        aspect-ratio: 1 / 1;
         background-color: transparent;
+        grid-area: pic;
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    p {
+
+        grid-area: text;
 
     }
 
