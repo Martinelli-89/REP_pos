@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import "./SideNav.scss";
 import {MenuButton} from "../../Components/MenuButton/MenuButton.jsx";
 import menu from "../../Assets/Img/menu.svg";
@@ -15,34 +16,39 @@ export const SideNav = () => {
 
         <nav className="sideNav">
             <h2 className="logo">Logo</h2>
-            <MenuButton text="Menu management"
-                        onClick={() => alert("Go to section")}
-                        img={menu}
+            <Link to="/MenuManagement">
+                <MenuButton text="Menu management"
+                            img={menu}
                         />
-            <MenuButton text="Sale items"
-                        onClick={() => alert("Go to section")}
-                        img={saleItems}
+            </Link>
+            <Link to="/SaleItems">
+                <MenuButton text="Sale items"
+                            img={saleItems}
+                            />
+            </Link>
+            <Link to="/Inventory">
+                <MenuButton text="Inventory"
+                            img={inventory}
+                            />
+            </Link>
+            <Link to="/Users">
+                <MenuButton text="Users"
+                            img={users}
+                            />
+            </Link>
+            <Link to="/StaffHours">
+                <MenuButton text="Staff hours"
+                            img={hours}
+                            />
+            </Link>
+            <Link to="/Reports">
+                <MenuButton text="Reports"
+                            img={reports}
                         />
-            <MenuButton text="Inventory"
-                        onClick={() => alert("Go to section")}
-                        img={inventory}
-                        />
-            <MenuButton text="Users"
-                        onClick={() => alert("Go to section")}
-                        img={users}
-                        />
-            <MenuButton text="Staff hours"
-                        onClick={() => alert("Go to section")}
-                        img={hours}
-                        />
-            <MenuButton text="Reports"
-                        onClick={() => alert("Go to section")}
-                        img={reports}
-                        />
+            </Link>
             <br></br>
             <br></br>
             <MenuButton text="Exit"
-                        onClick={() => alert("Go to section")}
                         img={quit}
                         />
         </nav>
