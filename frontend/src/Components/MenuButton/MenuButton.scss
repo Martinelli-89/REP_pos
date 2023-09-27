@@ -1,0 +1,29 @@
+.menuButton {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #D6DEEB;
+    width: 90%;
+    height: 32px;
+    cursor: pointer; 
+
+    .menuButtonImg {
+
+        height: 80%;
+        width: auto;
+        background-color: transparent;
+
+    }
+
+}
+
+.menuButton:hover {
+
+    background-color: #80A4C2 ;
+    transition: 0.5s;
+
+}

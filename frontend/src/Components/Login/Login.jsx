@@ -13,6 +13,7 @@ export const Login = (props) => {
             <h1>Welcome back!</h1>
             <Input label="Email" type="text" />
             <Input type="Password" />
+            <br></br>
             <Button text="Login" onClick={handleLogin} />
             <p>Don't have an account? Just <span className="signUp" onClick={signUp}>sign up</span></p>
             <p className="resetPassword" onClick={()=>alert("Something will happen")}>Forgot your password ?</p>

@@ -15,7 +15,8 @@ export const SignUp = (props) => {
             <Input label="Email" type="text" />
             <Input type="Password" />
             <Input label="Confirm password" type="Password" />
-            <Button text="SignUp" onClick={()=>alert("sign up will happen")} />
+            <br></br>
+            <Button text="Sign Up" onClick={()=>alert("sign up will happen")} />
             <p>Already have an account? Just click <span className="signUp" onClick={login}>here</span></p>
         </>
 
