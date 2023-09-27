@@ -1,0 +1,68 @@
+.userCard {
+
+    border: 1px solid #F78C6C;
+    display: grid;
+    grid-template-areas: 
+        "icon icon"
+        "person person"
+        "role role"
+        "update delete";
+    grid-template-rows:50% 10% 10% 30%;
+    grid-template-columns: 50% 50%;
+    color: 	#F78C6C;
+    height: 200px;
+    width: 150px;
+    border-radius: 15px;
+
+    .userIcon {
+
+        height: 80%;
+        aspect-ratio: 1/1;
+        grid-area: icon;
+        justify-self: center;
+        align-self: center;
+
+    }
+
+    .name {
+        grid-area: person;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .title {
+        grid-area: role;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .update {
+        grid-area: update;
+        justify-self: center;
+        align-self: center;
+        height: 40%;
+        aspect-ratio: 1/1;
+    }
+
+    .delete {
+        grid-area: delete;
+        justify-self: center;
+        align-self: center;
+        height: 40%;
+        aspect-ratio: 1/1;
+    }
+
+    .delete:hover, .update:hover {
+
+        height: 55%;
+
+    }
+
+}
+
+.userCard:hover {
+
+    background-color: #5F7E97;
+    transition: 0.5s;
+
+}
