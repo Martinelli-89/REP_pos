@@ -10,7 +10,7 @@ export const Users = () => {
 
         <section className="users">
             <div className="usersTitle">
-                <h3>Manager users</h3>
+                <h1>Manage users</h1>
             </div>
             <section className="usersCards">
                 <UserCard />

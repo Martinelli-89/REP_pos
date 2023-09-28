@@ -2,5 +2,59 @@
 
     width: 85vw;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 10vh 80vh;
+    grid-template-areas: 
+        "title"
+        "columns"
+        "data";
+    color: 	#F78C6C;
+
+    .inventoryTitle {
+
+        grid-area: title;
+        justify-self: center;
+        
+    }
+
+    .inventorySections {
+
+        width: 100%;
+        grid-area: columns;
+        color: #C792EA;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr) repeat(3, 1fr);
+        grid-template-areas: 
+            "item supplier quantity cost par";
+        justify-items: center;
+        align-items: center;
+
+    }
+
+    .sectionItem, .sectionSupplier, .sectionQuantity, .sectionCost, .sectionPar {
+
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-areas: "text icon";
+
+        p {
+            grid-area: text;
+            width: 100%;
+            height: 100%;
+            justify-self: center;
+            display: flex;
+        }
+
+        img {
+            grid-area: icon;
+            display: flex;
+            height: 40%;
+            align-self: center;
+            cursor: pointer;
+        }
+
+    }
+
 
 }
