@@ -2,8 +2,30 @@
 
     width: 85vw;
     height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-area: 
+        "title"
+        "cards";
+
+    .usersTitle {
+
+        grid-template-areas: title;
+        justify-self: center;
+        align-self: center;
+        color:#C792EA;
+
+    }
+
+    .usersCards {
+
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
+    grid-template-areas: cards;
+    overflow-y: scroll;
+
+    }
 
 }
